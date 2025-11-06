@@ -4,7 +4,7 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class test {
   public static void main(String[] args) {
-    SalaMuseo salaMuseo = new SalaMuseo();
+    SalaObservatorio salaMuseo = new SalaObservatorio();
     Thread[] threads = new Thread[100];
     generarThreads(threads, salaMuseo);
     for (Thread thread : threads) {
@@ -12,7 +12,7 @@ public class test {
     }
   }
 
-  public static void generarThreads(Thread[] t, SalaMuseo salaMuseo) {
+  public static void generarThreads(Thread[] t, SalaObservatorio salaMuseo) {
     int random;
     for(int i = 0;i<t.length;i++) {
       random = ThreadLocalRandom.current().nextInt(1, 4);

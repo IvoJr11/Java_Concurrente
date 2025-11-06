@@ -10,7 +10,6 @@ public class MonitorFerri {
   private int enEspera = 0;
   private boolean abierto = true;
   private int numViajes = 0;
-  private boolean ultimoRecorrido = false;
 
   public synchronized void abordarAuto() throws Exception {
     if(abierto) {

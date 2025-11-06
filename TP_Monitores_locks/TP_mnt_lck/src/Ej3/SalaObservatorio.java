@@ -5,7 +5,7 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class SalaMuseo {
+public class SalaObservatorio {
   private Lock mutex = new ReentrantLock(true);
   private Condition visitantes;
   private Condition investigadores;
@@ -16,11 +16,12 @@ public class SalaMuseo {
   private int cantConserjes = 0;
   private int cantDiscapacitados = 0;
 
-  public SalaMuseo() {
+  public SalaObservatorio() {
     visitantes = mutex.newCondition();
     investigadores = mutex.newCondition();
     conserjes = mutex.newCondition();
   }
+
   public void ingresaVisitante(boolean esDiscapacitado) throws Exception {
     try {
       mutex.lock();

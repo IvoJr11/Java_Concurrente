@@ -1,9 +1,9 @@
 package Ej3;
 
 public class PersonalMantenimiento implements Runnable {
-  private SalaMuseo salaMuseo;
+  private SalaObservatorio salaMuseo;
 
-  public PersonalMantenimiento(SalaMuseo s) {
+  public PersonalMantenimiento(SalaObservatorio s) {
     this.salaMuseo = s;
   }
 

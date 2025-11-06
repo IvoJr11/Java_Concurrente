@@ -1,9 +1,9 @@
 package Ej3;
 
 public class Investigador implements Runnable{
-  private SalaMuseo salaMuseo;
+  private SalaObservatorio salaMuseo;
 
-  public Investigador(SalaMuseo s) {
+  public Investigador(SalaObservatorio s) {
     this.salaMuseo = s;
   }
 
